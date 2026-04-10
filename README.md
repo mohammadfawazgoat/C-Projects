@@ -78,6 +78,6 @@ Implements the CS50 Cash problem.
 
 ## How to Run
 
-Compile:
-`bash
+**Compile:**
+```bash
 gcc filename.c -o output

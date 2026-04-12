@@ -1,6 +1,6 @@
 # C Practice Programs
 
-This repository contains a collection of C programs written while learning programming fundamentals, mainly inspired by CS50 and basic problem-solving exercises.
+This repository contains a collection of C programs written while learning programming fundamentals, mainly basic problem-solving exercises.
 
 ---
 

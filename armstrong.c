@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <math.h>
 
 int length(int no);
+int power(int base, int exp);
 
 int main(void)
 {
@@ -15,7 +15,9 @@ int main(void)
     {
         int no = n % 10;
         n = n / 10;
-        sum += (int)pow(no, len);
+        int y = power(no, len);
+        printf("%d\n",y);
+        sum += y;
     }
     if(sum == x)
     {
@@ -25,7 +27,7 @@ int main(void)
     {
         printf("%d is not an armstrong number", x);
     }
-    return 0;  // Added for good practice
+    return 0;  
 }
 
 int length(int no)
@@ -37,4 +39,14 @@ int length(int no)
         size++;
     }
     return size;
+}
+
+int power(int base, int exp)
+{
+    int result = 1;
+    for(int i = 0; i < exp; i++)
+    {
+        result *= base;
+    }
+    return result;
 }
